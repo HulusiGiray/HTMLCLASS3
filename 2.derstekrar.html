@@ -1,0 +1,81 @@
+<DOCTYPE html>
+    <html>
+        <body>
+
+<div>dfgdfg</div> <!--  Hemen bir alttaki satıra geçer.  -->
+<div>zxczxc</div>
+<p>klşklş</p>     <!--  Alt ve üst tarafıyla 1'er satır boşluk bırakır.  -->       
+<p>bnmbnm</p>
+
+<h1 style=" color:yellow ; background-color:red; ">DERS2 TEKRAR BAŞLIK</h1>
+
+<hr><!--  Uzun çizgi. Satır sonuna kadar, sonsuza kadar devam eder.  -->
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, natus.</p>
+<hr>
+
+<!--  p, zaten otomatik olarak alt ve üst satırla birer satır boşluk bırakır. Ancak kendi içinde de aynıdır.
+Kendi içinde 1000 boşluk bıraksan da, yine de 1 boşluk olarak algılar. Alt satıra da inmek için <br> tag'i kullanılır.  -->
+<!--  <br> tag'i alt satıra geçirir.  -->
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+<p>Lorem ipsum, <br>dolor sit amet consectetur adipisicing.</p>
+<p>Lorem ipsum, <br>dolor sit amet<br> consectetur adipisicing.</p>
+
+<pre>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et quae quis totam!</pre> <!--  Alıntılar içindir.  -->
+<pre>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+Et quae quis totam!</pre>                                                    <!--  İçeriği korur, yazdığın gibi ekrana basar.  -->    
+<pre>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Et quae quis totam!</pre>                                 <!--  Yazı fontu da hem değişir hem de incelir.  -->
+
+<b>Bu bir bold texttir.</b>             <!--  Yanyana output olur.  -->
+<strong>Bu bir strong texttir.</strong>                         <!--  <b> ve <strong> kalın yazı formatı sağlar.  -->
+
+<b>Bu bir bold texttir.</b>             <!--  Yanyana output olur.  -->
+<b>Bu bir bold texttir.</b>
+
+<strong>bu bir strong texttir.</strong> <!--  Yanyana output olur.  -->
+<strong>bu bir strong texttir.</strong>
+
+<br><b>Bu bir bold texttir.</b>         <!--  Başa <br> koyarak bu 2 texti diğerlerinden ayırdık.-->
+<strong>Bu bir strong texttir.</strong> <!--Ancak kendi aralarına koymadığımız için outputta yanyanalar.  -->
+
+<!--  Yazı font kalınlıkları olarak; bold=strong > p > pre  -->
+
+<p style="border:1px solid black">Bu yazının olduğu satırın tamamı kutucuğa alındı.</p><!--  tüm satırı kaplar  -->
+<br><b style="border:1px solid black">Bu yazının etrafı kutucuğa alındı.</b><!--  b ise yazı kadardır.  -->
+
+<p>Lorem ipsum dolor sit amet, consectetur <b>adipisicing elit.</b> Sit, odio.</p> <!--  Boldlu kısım kalın yazılır, geri kalanı p kalınlığında.  -->
+<div style="height:500px ; border:1px solid black">BLABLABLA</div>     <!--  500px derinlikli kutucuk.  -->
+
+<!--  En son p kullandığımız için, italic'in başına <br> koymadık.  -->
+
+        <!--  Bu 5 text'in 5'i de yana devam eder, alt satıra geçmez. Bu ytüzden başlarında <br> tag'i koydum.   -->
+<i>Italic text</i> <!--  Hafif yana yatık yazım stilidir. Alıntı için kullanılır.  -->
+<br><mark>Bu bir mark texttir.</mark> <!--  İşaretleme yani mark. Arka planı işaretlenmiş, boyalı şekilde ekrana bsatırır.-->
+<br><small>Small text</small>
+<br><del>Deleted text</del> <!--  üstü çizili text  -->
+<br><ins>Inserted text</ins> <!--  Altı çizili text  -->
+
+<!--  Bu yazım stillerini başka şekillerde de elde edebiliriz. örneğin; <mark> yerine background-color  -->
+<p>Lorem, ipsum dolor sit amet consectetur <b style="background-color:yellow">adipisicing elit.</b> Ipsa esse <i style="font-weight: bold;">"corrupti facere officiis"</i> 
+    quos sed eaque quisquam atque <mark>explicabo</mark> delectus!</p>
+
+<!--  red-green-blue - rgb. ifadeler 0-255 arasında kullanılır. Tamamen kırmızız için 25   -->
+<!--  rgba ifadesi renklere opaklık saydamlık ekler. rgb + alpha(0-1). 0 tamamaen saydamlık, 1 ise tamamen opaklığı temsil eder  -->
+<h1 style="background-color:rgb(255, 0, 0)"> kırmızı renkli h1 tag i dir</h1>
+<h1 style="background-color:rgba(255, 0, 0, 0.449)"> kırmızı renkli opacity eklenmiş h1 tag i dir</h1>
+<h1 style="background-color:rgb(0, 255, 0)"> yeşil renkli h1 tag i dir</h1>
+<h1 style="background-color:#00ff00"> yeşil renkli h1 tag i dir</h1>
+<h1 style="background-color:rgb(0, 0, 255)"> mor renkli h1 tag i dir</h1>
+<!--  Colorhunt sitesinden paletlere ve hangi renklerim birbiriyle daha uyumlu olduğuna bakılabilir https://colorhunt.co/  -->
+<!--  Sitelerde renklerin altında tanımlamak için 16'lık sisteme göre karşılıkları olur.
+    Örnek; 618264 = rgb(97, 130, 100) / 61, 97' e karşılık gelir. 82, 130' a karşılık gelir. 64, 100' e karşılık gelir. 
+    Peki, nasıl? 61 = 1x16^0 + 6x16^1 =97 / Harfler ise A-F arasındadır; AC=12x16^0 + 10x16^1 = 172-->
+<!--  hex 16'lık sistemde renkleri belirtir #rrggbbaa ile #rrggbbff arasında olur. 00 en saydam, ff en opak-->
+
+
+
+
+                <div style="height:500px"></div>
+        </body>
+    </html>
