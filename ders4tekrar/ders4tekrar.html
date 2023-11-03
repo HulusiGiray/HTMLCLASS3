@@ -1,0 +1,144 @@
+<!--  ! + enter -->
+<!DOCTYPE html> <!--  44-115 SATIR SORULACAK  -->
+<html lang="tr"><!--  lang = language , SEO için dili extradan belirttik.  -->
+
+<head><!--  Head kısmında sayfanın özellikleri yer alır. Google, head kısmına bakarak sayfanı sınıflandırır. SEO = ARAMA ALGORİTMASI = SEARCH ENGİNE OPTİMİZATİON  -->
+        <title>4.DERS TEKRARI</title><!--  Başlık, tarayıcada en üstte yazan yer. -->
+        <link rel="icon" type="image/x-icon" href="../ders1/metaworld.jpeg"><!--  rel = relevant = ilişki  ,  title'ın yanındaki simge(icon) değiştirmek için.  -->
+        <link rel="stylesheet" href="mystyle.css"><!--  dışarıdan referans tuttuğumuz link bilgisi için. rel ile de css dosyası eklemek için. 4.derstekrar -> new file -> mystyle.css  -->
+        <style>h1{color:red}</style> <!--  h1 etiketlerinin hepsinin rengini kırmızı yapar.  -->
+    <!--  link, dışarıdan gelen girdileri gösterir. içerik yüklemesi.  -->
+    
+    <!--  META ETİKETLERİ metinimiz içerisindeki, html'imiz içersindeki ek bilgileri gösteriyor.  -->
+        <meta charset="UTF-8"><!--  utf-8 karakter setidir, dillerin tanımlanması için. Browserlara küçük ı, büyük i ya da çince bir karaterin okunabilmesi için. Her bir harf, bir karaktere tekabül eder.-->
+        <meta name="keywords" content="HTML, CSS, Javascript"><!--  SEO için keywords veriyoruz. Sitemizde hangi içerikler var? , Sitemizde hangi içerikler önplanda?  içerik = content  -->
+        <meta name="description" content="Free Basketball Blog, Ücretsiz Basketbol Blog'u"><!--  Bu sitenin tanımlaması nedir? sorusu için. description = tanımlama  -->
+        <meta name="author" content="Hulusi Giray Güzel"><!--  author = yazar , yazarı belirtmek için. İçerik kapsamında yazarın ismini yazabiliriz.  -->
+        <meta><!--    -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--  yazımızın nasıl göründüğü ile alakalı bir meta tagi. tel, laptop, tablet vs. ekran tam olsun mu yani cihazına uyum sağlasın mı? ilk komut yani content="width=device-width = aygıt genişliğinin uyumu için  ,  initial-scale=1.0 ise zoom seviyesi içindir, zoomlama yapsın mı?  -->
+
+</head><!--  Head kısmında sayfanın özellikleri yer alır. Google, head kısmına bakarak sayfanı sınıflandırır. SEO = ARAMA ALGORİTMASI = SEARCH ENGİNE OPTİMİZATİON  -->
+
+
+<!--  !!!!SEMANTİK YAPI!!!! thead, tbody gibi SEO için faydalıdır. kodlama yapısını kullanan insanların oluşturduğu bir yapı. anlamsal element. ne yaptığımızı gösteriyoruz örneğin; başlık, bölüm, parça, altlık(footer) vs. bunların tamamı semantik yapıyı oluşturuyor. örneğin sayfanın en üstünde linkler, logolar vs. oluyor. footerda ise ulaşabileceğimiz linkler, tel no.lar, adresler, "bu bir bilmem ne yayıncılık tarafından oluşturulmuştur" yazısı. !!!YANDAKİ GÖRSELİ İNCELE!!! -->
+
+<!--  HEADER = dökümanın(site içeriğinin) başlık kısmı, içeriğin başlangıç bölümü. başlık olarak belirlediğin bölümü header içinde yazman semantik açıdan anlamsal yapıya kavuşturmuş oluyorsun. extra özellik değil ama bilgileri bölümlendirmiş oluyorsun.
+NAV = ulaşılabilir, tıklanılabilir linkler.  menüden bahsediyorsun, ulaşılabilir farklı içerikler,  adresler, contact us gibi bir çok link paylaşımı burada yapılıyor.
+ASİDE = SİDEBAR. kenar boşluğu, kenarda bir menü, açılabilir içerik vs. aside içinde 
+ARTİCLE= bölümlerden bağımsız başlıkları, alanları gösterir. Forum postu, blog postu, kullanıcı yorumları gibi tamamen farklı bir alan, yapı.
+SECTİON = bölüm. chapter chapter bir şey paylaşacaksak burada. bu yapı içindeki(genel yapı) chapterlar, bölümler.
+FOOTER = adres, yararlı linkler burada.  -->
+
+
+<!--  !!!! HTML ENTİTY KAVRAMI!!!!  Bazı karakterler html içinde ayrılmış. örneğin <h1></h1> içine < ya da > işareti kullanmak istiyorsun ama koyamıyorsun. Her karakterin bir rakamı, numarası, ifade ediliş şekli var. YANDAKİ GÖRSELDE ENTİTY YAPILARI VAR. örneğin; html birden fazla boşluğu kabul etmiyor. !!!! Body içirisinde olmak kaydıyla ister tag içi ister  tag dışında kullabiliriz !!!!
+1 karakter boşluk için; non-breaking space = &nbsp; = &#160;
+küçüktür işareti = less than = &lt; = &#60;
+büyüktür işareti = greater than = &gt; = &#62;
+euro = &euro; = &#8364; -->
+
+<body>
+        <h1 style="color: yellow">Merhaba</h1><!--  özel olarak sarı rengini tanımladığımız için sarı renktedir.  -->   
+        <h1>Merhaba</h1><!--  head bölümünde kırmızıyı tanımladığımız için kırmızı renktedir.  -->
+
+        <h3>Entity Name - Entity Number</h3>
+        <h3>aa&lt;aa</h3>&lt; <!--  iç, dış farketmez. ama dışarıya yazdığın outputta alt satırda gözükür çünkü h3 tüm satırı kaplıyor.  --> <!--  tag iç-kalın , tag dış-ince???? -->
+        <br><a>bb&lt;bb</a>&lt; <!--  tag dışındaki entity, a tag'ini kullandığımız için; outputta alt satıra geçmeden yanında gözükür. -->
+        <br><a>&lt; &#60;</a>
+    
+<!--  &nbsp;  ,  &ensp;  ,  &emsp;  ,  &thinsp;  boşluk bırakırlar. YANDAKİ GÖRSELDE HEPSİ MEVCUT  -->
+        <h3>asd        asd</h3><!--  html, 8 boşluğu da, 100 boşluğu da 1 boşluk olarak okur.  -->
+        <h3>asd &nbsp;&nbsp;&#160;asd</h3><!--  totalde 4 karakterlik boşluk oldu.  -->
+
+<!--  &ndash;  ve  &mdash;  ise "-" ile birlikte boşluk bırakırlar. YANDAKİ GÖRSELDE HEPSİ MEVCUT  -->
+        <h3>zzz&mdash;zzz</h3><!--  4 karakterlik boşluk bırakır w/- -->
+        <h3>zzz&nbsp;&nbsp;&nbsp;&nbsp;zzz</h3>
+    
+        <h3>xxx&ndash;xxx</h3><!--  2 karakterlik boşluk w/-  -->
+        <h3>xxx&nbsp;&nbsp;xxx</h3>
+
+        <h3>&copy;&#169;</h3><!-- copy işareti  -->
+    
+        <h3>&#128512;</h3><!--  gülen yüz emojisi  -->
+        <h3>&#128513;</h3><!--  farklı gülen yüz emojisi  -->
+
+
+<!--  HTML FORMS  --><!--  input, veri alınan yer. kullanıcıdan bir şeyler alıyoruz.  --><!--  id-for  ,  name-value  eşleşir.-->
+
+<form>
+        <label for="firstname">First Name:</label><!--  label içindeki for içeriği, input içindeki id ile bağlantılı.  --><!--  form içinde kullanılan isimlendirme içeriği  -->
+        <input type="text" name="firstname" id="firstname"><!--  name çok önemlidir. inputu ne ile anıyoruz?  --><!--  type="text"   text, her şeyi kapsar. harf, rakam, karakter vs.  -->
+    <br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname">
+    <br><button type="submit">Click Here</button><!--  submit butonu = form içersinde bulunan bilgileri gönder, alınan bilgileri gönder.  -->
+</form>
+    <br>
+    <br>
+<form>
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname">
+    <br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname">
+        <br>
+        
+<!--  HTML RADİO  -->
+        <!--  yuvarlak buton, bir çok tercihten BİR TANE seçebilirsin demek. name vermezsen üçü de seçiilebilir olur. nameler aynı olmalı ki birini seçebilelim, birbirimnin alternatifi olmuş oldular.-->
+        <input type="radio" value="HTML" name="FavoriteLanguage" id="html"><!--  işlememiz için önce her birine value vermeliyiz ki, birbirleriyle anlaşabilsinler -->
+        <label for="html">HTML</label><!--  neden label inputtan sonra yazıyoruz? çünkü yuvarlak+label şeklinde düşünebiliriz.  -->
+        
+        <input type="radio" value="CSS" name="FavoriteLanguage" id="css">
+        <label for="css">CSS</label>
+        
+        <input type="radio" value="Javascript" name="FavoriteLanguage" id="javascript">
+        <label for="javascript">Javascript</label> <!--  id ve for'u eklyince; sadece yuvarlakların üstüne basarak değil, yazının da üstüne basınca o seçeneği seçmiş oluyorsun.-->
+    <br>
+
+<!--  HTML CHECKBOX  -->
+<!--  birden fazla seçebilirsin, örneğin; ilgi alanların neler? birden fazla seçebiliyorsun. birbirinden bağımsız yapılar bunlar. sadece bike seçtiğinde araç1 bike olarak çıkıyor. tıklamadığında ise boş değer alır.-->
+<!--  id-for bağlantısı .value değerlerini gir. name gir  -->
+        <input type="checkbox" value="bike" name="araç1" id="bike"><!--  nameler farklı çünkü, birden fazlasını dışarı çıkarabiliriz. örneğin; hem bike hem car seçebilirim.  -->
+        <label for="bike">Bike</label>
+        <input type="checkbox" value="car" name="araç2" id="car">
+        <label for="car">Car</label>
+        <input type="checkbox" value="bus" name="araç3" id="bus"><!--  id ve for'u eklyince; sadece karenin üstüne basarak değil, yazının da üstüne basınca o seçeneği seçmiş oluyorsun.-->
+        <label for="bus">Bus</label>
+    <br><br>
+
+<!--  HTML DROPDOWN LİST--><!--  id-for(html, css)  ,  name-value(javascript)  eşleşir.-->
+        <label for="cars">Arabanı seç:</label><!--  id ve for'u ekleyince; arabanı seç'e bastığında; yukarı ve aşağı ok tuşlarıyla seçenek değişebilirsin. aslında yine aynı görevi gördü.  -->
+            <select name="cars" id="cars" size="2" multiple><!--  name sadece burada çünkü seçeneklerden birini seçeceğiz zaten.  --><!--  size yapısı, aynanda kaç tane seçeneğin gözükeceğini seçmek için.  --><!--  multiple 'ı ekleyince şunu yapabiliyoruz; ctrl'ye basılı tutarak birden fazla seçenek seçilebilir.  -->
+                <option value="volvo">Volvo</option><!-- içerideki yapı sadece metin dili, herhangi bir şey yazılabilir. önemli olan value!!!!! arka planda çalışan, programlama içeriği value!!!!!  -->
+                <option value="honda">Honda</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select><!--  tıkladığında dropdown list nasıl kapanır?  -->
+            
+<!--  id="cars" dediğimiz kısım(select'in açılış tag'inden kapanış tag'ine kadar tamamı) artık cars olarak anılıyor, kabul ediliyor. 
+    *carsid=<select name="cars" id="cars" size="2" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="honda">Honda</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option> 
+            </select> 
+cars ise   cars = value'lardan birisi yani volvo ya da honda ya da fiat ya da audi  örnek;  (name)cars = (value)volvo  -->
+            
+<!--buraya css özellikleriyle(renk ekleme, arka plan ekleme işlemleri vs.)işlemlerini yapmak istiyorsan bu cars ismine ulaşıp buradan işlemlerini yapacaksın. ama name değerini javascript ve programlama içeriği kullanıyor. aynı yapma sebebimiz kafa karışıklığını engellemek. id="carsid" de yazabiliriz ama bir şartla; for"carsid" yazmalıyız çünkü beraber çalışıyorlar. -->
+<br>
+
+<!--  TEXTAREA  -->
+<textarea name="message" rows="10" cols="30">Bu bir text areadır.</textarea><!--  sağ alt köşeden tutup genişletilebilir. rows ve cols ile de yazı alanı büyütülebilir. -->
+
+
+
+        <!--  iki buton da aynı işlevi görür  -->    
+    <br><button type="submit">Click Here</button><!--  type="submit" , bütün değerleri alır ve aktarır.  -->
+    <input type="submit" value="Click Here2"><!--  type="submit" , bütün değerleri alır ve aktarır.  -->
+
+<button type="button">Click Here3</button> <!--  bireysel bazlıdır.  -->
+<button type="button" onclick="alert('ALERT! Click Here4 butonuna basıldı.')">Click Here4</button><!--  ONCLİCK ÖZELLİĞİ, butona tıklandığında ne olacağını bildiren bir ifade sunar. alert fonksiyondur, parantez içindeki ifade tırnak içinde olmalı. tek tırnak ya da çift tırnak farketmez.   -->
+</form>
+
+    <div style="height : 500px"></div>
+</body>
+</html>
