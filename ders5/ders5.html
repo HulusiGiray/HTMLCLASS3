@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.DERS</title>
+</head>
+
+<body>
+    <form>
+        <label>Selec File:</label>
+        <input type="file" id="files" name="files"><!--  dosya eklemek için = type="file"  -->   
+<br>
+ <!--  .mp3 = müzik uzantısı  ,  .mp4 = video uzantısı  -->
+        <video width="320" height="240" controls> <source src="naturevideo.mp4" type="video/mp4"> </video><!--  320 ve 240 pixel cinsindendir. controls attribute'unu eklediğinde; videoyu başlatma, durdurma, ses aç-kapa, ekranı büyüt vs. gibi kontrolleri eklemiş oluyoruz. -->
+<br>
+        <video width="320" height="240" controls autoplay muted> <source src="naturevideo.mp4" type="video/mp4"> </video><!--  autoplay = kendi kendine çalışması için. muted = video oynatılıyor ama sessiz bir şekilde. -->
+<br>
+        <audio controls>
+            <source src="metallica.mp3" type="audio/mpeg"><!--  müzik eklemek için.  -->
+        </audio>
+<br>
+        <iframe width="300" height="200" src="https://youtu.be/a7dVw2GlrWo?si=4cDx_par_uDJQ_FC"><!--  alıntılar için kullanılır.  -->
+        </iframe>
+<br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/a7dVw2GlrWo?si=JZBl9RJowRWwGEK2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>  
+        </iframe><!--  embed = gömülü. frameborder = çerçeve.  -->
+</form>
+
+<div style="height : 500px"></div>
+</body>
+</html>

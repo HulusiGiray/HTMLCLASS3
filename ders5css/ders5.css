@@ -1,0 +1,60 @@
+/* burası yorum kısmı, ctrl+ö */
+/* universal selector */
+
+/* *{
+    text-align: center;
+    color:blue;
+} */
+
+
+/* element selector */
+
+/* p {
+    color:red;
+}  */
+
+
+/* id selector */
+
+/* #id1 {
+    color:black;
+} */
+
+
+/* class selector */
+
+/* .center { 
+    color:aquamarine
+}    */
+
+/* combinators */
+p.center {
+    color:red;
+}
+
+h1, h2 {
+    color:blue;
+}
+
+/* div b {
+    color: aqua;
+} */
+
+div > p >b {
+    color:aqua;
+}
+
+p {
+    color:chartreuse !important;
+    background-color:blue;
+}
+
+/* external css(harici dosya, head kısmına href), 
+   internal css(style tag içine h1{color:red}), 
+   inline css(satır içi - örn, style kısmı - en yüksek rütbeli) 
+   css yapabildiğin her şeyi style taginde yapabilirsin. */
+
+
+
+
+
