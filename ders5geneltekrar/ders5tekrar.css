@@ -1,0 +1,99 @@
+/* ctrl+ö */
+*{
+    text-align: center;
+    color:blue;
+} /* *işareti evrensel css seçicisidir. HTML içine yazdığımız her şeyi seçmiş oluruz yani html içine yazdığımız her şey ortalandı ve mavi renkte ekrana basılacak demektir.  */
+
+
+/*  ELEMENT SELECTOR - ELEMAN SEÇİCİ *//*  ELEMENT SELECTOR - ELEMAN SEÇİCİ *//*  ELEMENT SELECTOR - ELEMAN SEÇİCİ */
+/* Bir elemanı ya da birden fazla elemanı seçip özellikklerini değiştirmek için kullanılır. */
+/* TYPE SELECTOR *//* TYPE SELECTOR *//* TYPE SELECTOR *//* TYPE SELECTOR */
+p{
+    color:red;
+} /* bütün p taglerinin içindeki yazıları kırmızı yap (özel olarak içine yazmadığımız sürece) */
+
+div{
+    color:chartreuse;
+}
+
+
+
+/* İD SELECTOR - İD SEÇİCİ *//* İD SELECTOR - İD SEÇİCİ *//* İD SELECTOR - İD SEÇİCİ */
+h3#id5{
+    color:black;
+} /* <h3 id="id5">  ,  id5 id'sine sahip bütün h3 elemanlarını seçer. */
+
+#id1{
+    color:black;
+} /*   <element id="id1"> olan her şey siyah renk ile outputta çıksın, demektir. */
+
+
+
+
+
+/* CLASS SELECTOR - SINIF SEÇİCİ *//* CLASS SELECTOR - SINIF SEÇİCİ *//* CLASS SELECTOR - SINIF SEÇİCİ */
+.center{
+    color:pink;
+} /* <element class="center"> center classname'i içeren tüm elemanları seçer. */
+
+.main{
+    width : 50;
+}/* <element class="main">  ,  başlarına paragraf stilini de ekleyebiliriz. örn; .main yerine div.main{width:50;} */
+
+h1.title{
+    font-size:30px;
+    color:blueviolet;
+} /* <h1 class="title">  */
+
+
+/*   altgr + ü = ~   */
+
+
+/* COMBİNATORS - BİRLEŞTİRİCİ */
+div b{
+    color:brown;
+}/* div içindeki tüm b'ler demektir. 
+<div>
+    <p>
+        <b>Bu kısım paragrafın kalın yazılı kısmıdır.</b>
+            
+        Bu okuduğun kısım b'nin değil p'nin içindedir.
+        
+    </p>
+    <b>Burası kalın yazılı ve paragrafın dışındadır.</b>
+</div>
+*/
+
+h1, h2{
+    background-color:red ;
+} /* bütün h1 ve h2'lerin arka plan rengi kırmızı olsun */
+
+div > b{
+    font-size : large;
+}/* div'in direkt içindeki b için. yani sadece çocuğa, toruna değil.
+<div>
+    <p>
+        <b>Bu kısım paragrafın kalın yazılı kısmıdır.</b>
+            
+        Bu okuduğun kısım b'nin değil p'nin içindedir.
+    </p>
+    <b>Burası kalın yazılı ve paragrafın dışındadır.</b>!!!SADECE BU SATIRI ETKİLER YANİ ÇOCUĞUNU, TORUNu OLAN B'Yİ(p'nin altındaki b'yi) ETKİLEMEZ!!!
+</div>
+*/
+
+div > p > b{
+background-color : purple;
+}
+
+/* CSS'in kullanıldığı 3 farklı yapı vardır. 
+1-external css - harici css = extra css dosyası olarak oluşturduğumuz yani html'de head bölümüne <link rel="stylesheet" href="ders5tekrar.css"> eklemek. 
+2-internal css = head'in içinde <style> h1{color:red} </style> ya da html sayfasının en altında </html>'in altında da aynı şekilde yapabiliriz.
+3-inline css - satır içi css = <p style=""> şeklinde yaptığımız işlemler. !important'dan sonra rütbesi en yüksektir. */
+
+p {
+    color:chartreuse !important;
+    background-color:blue;
+}/* Öncelik kılar, en rütbelidir. !important 'ın olduğu yerde, bu özellik için önceki her şey geçersiz kılınır. */
+
+
+/* !importanat     >     <element style="">     >     <element> */

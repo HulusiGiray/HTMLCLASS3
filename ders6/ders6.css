@@ -1,0 +1,45 @@
+body{
+    color:orange;
+    background-image : url("../ders1/metaworld.jpeg");
+    background-repeat : cover; /* no-repeat*/
+    background-size : 400px 400px;
+    background-position: left bottom; /* left, right, top, bottom*/
+    background-clip : text;
+    -webkit-background-clip: text;
+    color:transparent;
+}
+
+/* css border */
+
+p {
+border-style: solid;
+width: 300px;
+border-width:3px 5px 7px 9px ;
+border-color: red yellow;
+}
+
+h1{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}/* Kısa yolu aşağıdaki gibi */
+h1 {
+    border: 1 px solid black;
+}
+
+h1 {
+    border-radius: 10 px;
+}
+
+h1 {margin: 50px 20px
+}
+
+
+
+
+
+
+
+
+
+
