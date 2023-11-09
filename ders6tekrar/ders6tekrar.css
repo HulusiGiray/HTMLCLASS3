@@ -256,7 +256,7 @@ div {
 
 
 
-/* OUTLİNE *//* OUTLİNE *//* OUTLİNE *//* OUTLİNE */
+/*                       OUTLİNE                           */
 /* 2.border gibi düşünebiliriz. Geldiği yeri eziyor, işlemleri eziyor. */
 
 /*  Önce, her dil için geçerli olan şeyleri buraya yazdık. */
@@ -305,7 +305,8 @@ div.secondDiv {
     outline-width : 10px;
     outline-style : ridge;
     outline-color: red;
-                           } ridge = 3 boyutlu çerçeve. */
+                           } 
+ridge = 3 boyutlu çerçeve. */
 
 /*
 div.thirdDiv {
@@ -316,50 +317,125 @@ div.thirdDiv {
 
       /* HTML'de 42-47 arasını yazdık ve aşağı geçtik  */
 
+/*
 div {
     border : 1px solid  black;
     padding : 10px;
     width : 250px;
     height : 250px;
-} /* HTML'de div'in içindeki paragrafı çerçeveye aldı. */
+                                 }
+HTML'de div'in içindeki paragrafı çerçeveye aldı. */
 
 
 /*                   METİN İÇERİKLERİ                   */
 
+/*
 div {
     border : 1px solid  black;
     padding : 10px;
-    width : 250px;
-    height : 250px;
+    width : 500px;
+    height : 500px;
     text-align: center ;
-} /* div'in içindeki metinleri ortalamak için. Left ya da right diyebiliriz. */
+                                  }
+div'in içindeki metinleri ortalamak için. Left ya da right diyebiliriz. */
 
 
+/*
 body{
     text-align : center;
                         } 
-/* body içindeki bütün textleri ortalar. div'i etkilemez. */
+body içindeki bütün textleri ortalar. div'i etkilemez. */
 
-
+/*
 div {
     text-align : justify;
                           } 
-/* iki yana eşit bir şekilde yasla komutudur. */
+iki yana eşit bir şekilde yasla komutudur. */
 
+/*
+div img {
+    vertical-align: text-top;
+                              }
+text-bottom , metnin içindeki immg'in konumu için */
 
+/*
+h1 {
+    text-decoration-line: overline ;
+                                     }
+overline=üst tarafını çizmek, üzerini değil */
 
+/*
+h3{
+    text-decoration-line: underline;
+    text-decoration-color: red ;
+    text-decoration-style: double;
+    text-decoration-thickness: 5px;
+                                      }
+çizgi nerede olsun, rengi, tipi,  çizginin kalınlığı */
 
+/*
+h2 {
+    text-decoration-line: line-through;
+                                         }
+<del> gibi üzerini çiziyor, del burdan geliyor. birbirlerinin alternatifleridir. */
 
+/*
+h1 {
+    text-transform: uppercase;
+                                }
+uppercase=büyük harf */
 
+/*
+h2 {
+    text-transform: lowercase;
+                               }
+lowercase=küçük harf */
 
+/*
+h2 {
+    text-transform: capitalize;
+                                }
+bütün kelimelerin ilk harfi büyük harf, gerisi küçük. */
 
+div {
+    text-indent: 50px;
+    letter-spacing:3px;
+    word-spacing: 15px;
+    line-height: 1.8;
+                         }
+/* text-indent=satır başı mesafesi 
+letter spacing=harfler arası boşluk 
+word-spacing=kelimeler arası boşluk
+line height=satır yüksekliği (default=1) */
 
+/*
+div {
+    white-space: nowrap;
+                         } 
+bütün metni tek satırda yazar. bir alt satıra geçmemesi için. */
 
+h1 {
+    text-shadow : 2px 2px red;
+}
+/* text-shadow=metin gölgelendirmesi , 2px sağa-2px aşağı*/
 
+h2 {
+      text-shadow : -5px 5px red, 0 0 25px yellow, 
+      0 0 5px green;
+}
+/* - ters yönde yapar ve bu örnekte gördükki  birden fazla renk ekleyebiliriz. 0 dememizin sebebi sadece blurluğa etkileri olsun diye. */
 
+h1 {
+    text-shadow : 2px 2px 5px red;
+}
+/* 5px yani 3.girilen "blur efekt" ya da neon gibi düşünebiliriz. */
 
-
-
-
-
-
+span {
+    writing-mode: vertical-rl;
+    color:red;
+    height: 100px;
+    text-align: center;
+}
+/* lr=left right
+rl=right left 
+height eklemezen, yazı ile img orantısız olur.*/

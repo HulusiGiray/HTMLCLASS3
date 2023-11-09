@@ -1,0 +1,35 @@
+body {
+    background-color: rgba(0,50,0,0.2);
+}
+
+p#id1 {
+     font-weight: bolder;
+}
+
+a.slm {
+    font-family: 'Courier New', Courier, monospace;
+    border-style: groove;
+    border-width : 3px 10px;
+    border-color: whitesmoke;
+}
+
+a#son {
+    text-align: justify;
+    border-radius :10px ;
+}
+
+textarea {
+    min-width: 500px;
+    min-height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button1 {
+    text-align: center ;
+}
+
+p.copyright {
+    text-align:center;
+}

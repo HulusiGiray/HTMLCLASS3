@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+    <link rel="stylesheet" href="../project- WHO-R-U/project-WHO-R-U.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WHO-R-U?</title>
@@ -11,11 +12,12 @@
 
 <body>
     <form>
-        <p>Merhaba yabancı! WHO-R-U?' ya hoş geldin.</p>
-        <a>Kendi alanında iş mi arıyorsun? WHO-R-U?, bir iş arama sitesidir yani doğru adrestesin&#128515;.Aşağıdaki komutları takip ederek, sana uygun iş arayan şirketlerle en kısa sürede iletişime geçmeni sağlayacağız.<a><br>
-        <a>Tek yapman gereken aşağıdaki komutları takip ederek senden istenilen sorulara cevap vermen, bol şans!</a>
-    
+        <p id="id1">Merhaba yabancı! WHO-R-U?' ya hoş geldin.</p>
+        <p>Kendi alanında iş mi arıyorsun? WHO-R-U?, bir iş arama sitesidir yani doğru adrestesin&#128515;.Aşağıdaki komutları takip ederek, sana uygun iş arayan şirketlerle en kısa sürede iletişime geçmeni sağlayacağız.
+        <p>Tek yapman gereken aşağıdaki komutları takip ederek senden istenilen sorulara cevap vermen, bol şans!</p>
+        <a href="#basla">Başlamak için buraya tıkla!</a>
     <br><br><br>
+        <a id="basla"></a>
         <p>Kişisel bilgilerinle başlayalım.</p>
         <label for="isim-soyisim">İsim - Soyisim:</label>
         <input type="text" id="isim-soyisim" name="isim-soyisim">
@@ -30,59 +32,77 @@
                 <option value="izmir">İzmir</option>
                 <option value="ardahan">Ardahan</option>
                 <option value="antalya">Antalya</option>
-                <option value="bursa">Bursa</option>
+                <option value="adana">Adana</option>
+                <option value="erzurum">Erzurum</option>
+                <option value="kayseri">Kayseri</option>
             </select>
         <br><br><br>
         
-        <a>Ulaşım için  genellikle hangisini kullanıyorsun?</a>
+        <a class="slm">Hangisi ile Ulaşımınızı sağlıyorsunuz?</a>
         <br>
-        <input type="checkbox" value="bike" name="araç1" id="bisiklet">
+        <input type="radio" value="BİSİKLET" name="araç" id="bisiklet">
         <label for="bisiklet">Bisiklet</label>
-        <input type="checkbox" value="car" name="araç2" id="car">
-        <label for="car">Şahsi Araç</label>
-        <input type="checkbox" value="ttasima" name="araç3" id="ttasima">
-        <label for="bus">Toplu taşıma</label>
+        
+        <input type="radio" value="ŞAHSİARAÇ" name="araç" id="şahsiaraç">
+        <label for="şahsiaraç">Şahsi Araç</label>
+        
+        <input type="radio" value="TOPLUTAŞIMA" name="araç" id="toplutaşıma">
+        <label for="toplutaşıma">Toplu Taşıma</label>
+        
         <br><br><br>
         
-        <a>Mezuniyet durumun;</a>
+        <a class="slm">Mezuniyet durumunuz;</a>
         <br>
-        <input type="checkbox" value="" name="" id="">
+        <input type="radio" value="İLKOKUL" name="okuldurumu" id="ilkokul">
         <label for="ilkokul">İlkokul</label>
     <br>
-        <input type="checkbox" value="" name="" id="">
-        <label for="car">Ortakul</label>
+        <input type="radio" value="ORTAOKUL" name="okuldurumu" id="ortaokul">
+        <label for="ortaokul">Ortakul</label>
     <br>    
-        <input type="checkbox" value="" name="" id="">
-        <label for="ilkokul">Lise</label>
+        <input type="radio" value="LİSE" name="okuldurumu" id="lise">
+        <label for="lise">Lise</label>
     <br>    
-        <input type="checkbox" value="" name="" id="">
-        <label for="ilkokul">Önlisans</label>
+        <input type="radio" value="ÖNLİSANS" name="okuldurumu" id="önlisans">
+        <label for="önlisans">Önlisans</label>
     <br>    
-        <input type="checkbox" value="" name="" id="">
-        <label for="ilkokul">Lisans</label>
-
+        <input type="radio" value="LİSANS" name="okuldurumu" id="lisans">
+        <label for="lisans">Lisans</label>
+    <br>
+        <input type="radio" value="HİÇBİRİ" name="okuldurumu" id="hiçbiri">
+        <label for="hiçbiri">Hiçbiri</label>
+        
         <br><br><br>
-        <a>Bu kısıma ise kendini anlattığın 9-10 cümlelik bir yazı bırakabilirsin!</a>
+
+        <a class="slm">Aşağıdaki seçenekelerden size uygun olanları seçiniz.</a>
+    <br><br>
+        
+        <input type="radio" value="HRKT1" name="HRKT" id="hareket1">
+        <label for="hareket1">Hareketi, koşuşturmacayı severim. Saha, operasyon insanıyım.</label>
+    <br>  
+        <input type="radio" value="HRKT2" name="HRKT" id="hareket2">
+        <label for="hareket2">Hareketleri işlerden ziyade ofis işleri, ofis hayatı bana daha uygun.</label>
+    <br><br><br>
+    <input type="radio" value="GRPİŞ1" name="GRPİŞ" id="grpiş1">
+    <label for="grpiş1">Tek çalışmayı daha çok severim.</label>
+<br>  
+    <input type="radio" value="GRPİŞ2" name="GRPİŞ" id="grpiş2">
+    <label for="grpiş2">Grup halinde yapılan işleri daha çok severim.</label>
+    
+
+
+
+<br><br><br><br><br>
+        
+        <a id="son">Son olarak bu kısıma kendini anlattığın 9-10 cümlelik bir yazı bırakabilirsin!</a>
         <br>
         <textarea name="message" rows="10" cols="30"></textarea>
 
-        <br><br><button type="button" onclick="alert('Kişisel bilgileriniz alındı!')">Gönder</button>
+        <br><br><button class="button1" type="button" onclick="alert('Kişisel bilgileriniz alındı!')">Gönder</button>
     </form>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    <p>Copyright&nbsp;&copy;&nbsp;2023 WHO-R-U?</p>
+    <p class="copyright">Copyright&nbsp;&copy;&nbsp;2023 WHO-R-U?</p>
 </body>
 </html>
