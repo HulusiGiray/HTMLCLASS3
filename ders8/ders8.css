@@ -1,0 +1,165 @@
+/* 
+a:link {
+    color:red;
+    text-decoration: none;
+    background-color: yellow;
+}
+text-decoration: none=altlarındaki çizgileri yok ettik. */
+
+/* 
+a:visited {
+    color: green;
+    background-color: aqua;
+}
+text-decoraiton gibi birkaç şeyi de burada kullanamıyoruz. browser izin vermiyor güvenlik nedeniyle.  
+daha önce üzerine bastıklarımız(visited), sarı-kırmızıdan-->yeşil-aqua'ya döner. */
+
+/* 
+a:hover {
+    color: pink;
+    background-color: blue;
+    text-decoration: none;
+}
+moouse ile üzerine geldiğinde, buranın içindeki özellikler geçerli olur.*/
+
+/* 
+a:active{
+    color:blue;
+    background-color: brown;
+    font-size: 30px;
+}
+üzerine tıkladığın zaman, buranın içindeki özellikler geçerli olur. */
+
+/* 
+a:first-child{
+    text-transform: uppercase;
+}
+a içindeki ilk çocuk */
+
+/* 
+a:last-child {
+    border:2px solid black;
+}
+a içindeki son çocuk */
+
+/* 
+a:nth-child(even) {
+    padding-left: 20px;
+    margin-left: 20px;
+}
+even=çift yani 2 ve 4. çocuklar.
+padding içeriyle arasına boşluk
+margin dışarıyla arasına boşluk */
+
+/*
+a:not(a:last-child) {
+    font-family: fantasy;
+}
+ son çocuk almasın demektir. */
+
+          /* buraya gelince hepsini yoruma aldık */
+
+/*                      CSS DİSPLAY                        */
+/*
+li {
+    display: inline;
+                     }
+kendi alanları kadar yer kaplarlar */
+
+/*
+span {
+    display: block;
+                    }
+her spande alt satıra geççti */
+
+/*
+h1.hidden {
+    display: none;
+                   }
+HTML içinde <h1 class="hidden">BU İSE GİZLİ BAŞLIK</h1> yaptığımımz kısım  outputta kayboldu gözükmüyor ve kapladığı alanda gitti yani hiç yokmuş gibi gözüküyor*/
+
+/*
+h1.hidden {
+    visibility: hidden;
+                         }
+bu şekilde ise; yazının kapladığı alan var ama görünmüyor. */
+
+span.a {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    padding: 5px;
+    border: 2px solid blue;
+    background-color: yellow;
+}
+/* display: inline=yanyana , 
+width ve height yüklemesi olmadı, çünkü inline girdik. YANİ
+İNLİNE ELEMENTE GENİŞLİK VE YÜKSEKLİK VERİLEMEZ. 
+padding , border ve bg color ile ilgili sorun yok.
+margin-left: 10px=içerikleri 10px sağa kaydırdı.*/
+
+/*
+span.b {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 2px solid blue;
+    background-color: yellow;
+}
+display: inline-block; 'nin display: inline ' dan farkı yükseklik ve genişllik verilebilyor!! AMA ALT SATIRA GEÇMEZ, YANYANA YAZMAYA DEVAM EDER!!*/
+
+/*
+span.c {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 2px solid blue;
+    background-color: yellow;
+}
+span'in display default'u inlinedır. block yazınca alt satıra geçer ve genişlik yükseklik ayarlanabilir.
+ */
+
+ /*              CSS POSİTİON , DEFAULT AYARI=RELATİVE            */
+ div.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: relative;
+    left: 25px;
+    top: 25px;
+ }
+
+ div.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    left: 150px;
+ }
+
+ div.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: static;
+    left: 25px;
+ }
+
+ div.kırmızı {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    position: relative;
+ }
+
+ div.mavi {
+    width: 150px;
+    height:150px;
+    background-color: blue;
+    position: relative;
+    left:calc(50% - 75px);
+    top:calc(50% - 75px);
+ }
