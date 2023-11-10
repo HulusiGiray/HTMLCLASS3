@@ -1,0 +1,13 @@
+body {
+    background-color: rgba(0,50,0,0.2);
+}
+
+p#id1 {
+     font-weight: bolder;
+}
+
+p.copyright {
+    position: absolute;
+      left: 235px;
+      top: 600px;
+}

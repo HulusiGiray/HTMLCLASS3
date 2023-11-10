@@ -2,10 +2,6 @@ body {
     background-color: rgba(0,50,0,0.2);
 }
 
-p#id1 {
-     font-weight: bolder;
-}
-
 a.slm {
     font-family: 'Courier New', Courier, monospace;
     border-style: groove;
@@ -13,9 +9,23 @@ a.slm {
     border-color: whitesmoke;
 }
 
+
+img {
+    position: absolute;
+    left: 8px;
+    top: 750px;
+}
+
+#fotometa {
+    position : absolute;
+    left: 210px;
+    top: 820px;
+}
+
 a#son {
-    text-align: justify;
-    border-radius :10px ;
+    position: absolute;
+    left: 90px;
+    top: 995px;
 }
 
 textarea {
@@ -27,7 +37,8 @@ textarea {
 }
 
 .button1 {
-    text-align: center ;
+    margin:0 auto 0 auto;
+    text-align:center;
 }
 
 p.copyright {
