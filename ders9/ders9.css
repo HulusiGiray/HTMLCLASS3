@@ -1,0 +1,157 @@
+/*                                   OVERFLOW                                  */
+/*
+div {
+    background-color: yellow;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+                                }
+overflow:hidden -> taşmalar gizleniyor. */
+
+/*
+div {
+    background-color: yellow;
+    width: 300px;
+    height: 300px;
+    overflow: scroll;
+                                }
+overflow: scroll  scroll ekler*/
+
+/*
+div {
+    background-color: yellow;
+    width: 300px;
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+                                 }
+overflow-x: hidden;
+    overflow-y: scroll;
+    yapısı, yana scroll'u gizler sadece yukarı-aşağı scroll ekler. */
+
+    /*
+    div {
+        background-color: yellow;
+        width: 300px;
+        height: 300px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        overflow-wrap: break-word;
+                                    }
+    overflow-wrap: break-word; uzun keliemler için taşma kontrolünün yapılması için */
+
+    /*
+    div {
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        border: 2px solid black;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+                                   }
+    text-overflow: ellipsis; taşan kısımlara üç nokta koyar 
+    white-space: nowrap; bir metni bir satırda kesintisiz olarak görüntülemek için kullanılır.Yani, metin içindeki boşluklar veya yeni satırlar göz ardı edilir ve bütün metin tek bir satır halinde görüntülenir. */
+
+/*                           FLOAT                           */
+/* float:right ya da float:left ,içeriği sayfanın sağına soluna atmak için */
+/*
+.div1 {
+    background-color: red;
+    float: right;
+    padding: 10px;
+                             } */
+
+/*
+.div2 {
+    background-color: yellow;
+    float: right;
+    padding: 10px;
+                                } */
+
+/* 
+.div3 {
+    background-color: green;
+    padding: 10px;
+    float: left;
+                                 } */
+
+/*
+p {
+    clear:both
+}
+clear:both demek hem sağ için hem sol için demektir. sadece sağ kaymalarınız varsa clear:right diyebilirsin. sol içinde aynısı geçerli. */
+
+/*                 PSEUDO CLASS                     */
+
+/* Aslında varlar ama yoklar. Üzerlerine basamazsın, copy-paste yapamazsın. */
+
+/* 
+p::first-line {
+    color: red;
+    font-variant: small-caps;
+                              } */
+
+/*
+p::first-letter {
+    color: blue;
+    font-size: xx-large;
+                         } */
+
+/* 
+p::before {
+    content:"PARAGRAF BAŞLAMADAN YAZILACAK METİN";
+    color: aqua;
+                                                    } */
+
+/* 
+p::after {
+    content: "PARAGRAF BİTİMİNDE YAZILACAK METİN";
+    color: purple;
+                                                     } */
+
+/*
+p::selection {
+    color: chartreuse;
+    background-color: yellow;
+}
+Sol tıka basılı tutup aldığımız alan */
+
+/*
+a[target]{
+    background-color:yellow;
+                             } */
+
+/*
+a[target=_blank]{
+    background-color:yellow;
+                             }
+target attribute'una sahip bir a */
+
+/*
+[class~="site"] {
+     border:5px solid black;
+                             }
+class'ın içinde site yazanlar. site de olabilir wewbsite de vs. vs. */
+
+/*
+[class*="site"]{
+    border:5px solid black;
+                            } */
+
+/*
+input[type="text"]:focus{
+     background-color:red;
+} */
+
+/*
+input[type="button"]:hover{
+    background-color: yellow;
+    color: blueviolet;
+}
+butona basmadan üzerine mouse'u tuttuğunda sarı olur. */
+
+/*
+input[value="click here"]:active{
+    background-color: blue;
+}
+butona bastığında ise mavi olur. */
