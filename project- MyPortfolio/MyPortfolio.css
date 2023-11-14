@@ -1,0 +1,11 @@
+*{
+    background-color: mediumpurple;
+}
+p.cls1{
+    font-family: normal;
+    width: 1000px;
+    position: absolute;
+    left: 380px;
+    top: 400px;
+}
+
