@@ -1,0 +1,15 @@
+*{
+    background-color: mediumpurple;
+    text-align: center;
+}
+
+#son::after {
+    content:"Copyright©2023 My Portfolio";
+    color: black;
+}
+
+#son {
+    position: absolute;
+    top: 97%;
+    left:calc(50% - 101px);
+}
