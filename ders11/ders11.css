@@ -1,0 +1,46 @@
+/*
+.flex-container {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 600px;
+    align-items: center;
+    align-content: space-evenly;
+} 
+- flex kullanmak istiyorsan parent'a ver ki, altındakiler etkilensin. 
+flex, çocukları tek satıra sıkıştırıyor. Yer yetmezse çocukları küçültür.
+- flex-wrap: wrap; yapısı ile sığmadığı zaman otomatik olarak aşağı indirir. default olarak no-wrap
+- flex-direction: row; default özelliktir.
+- justify-content: -> çoklu.
+- justify-content: center; yapısı YATAYDA HİZALAMA yapar.
+- justify-content: flex-start; köşeye hizalıyor.flex-end 
+- justify-content: space-around; aralara eşit boşluk bırakıyor ama köşelerle değil
+- justify-content: space-evenly; kendi satırandaki bütün boşluklar eşit.
+justify-content: space-between; yanlarda boşluk yok
+
+- align-items: center; DİKEYDE HİZALAMA yapar tek satırlı çoklu işlemlerde kullanmak daha doğru olacaktır.
+align-items yapısı çoklu işlerde sayfayı 2 ye böler gibi düşünüp ona göre ortalar. bunun için align-content kullan
+- align-items: stretch; default olan 
+- align-items: flex-start; yapısı, tepeye hizaladı.
+
+- align-content: center; çoklu yapı da olsa, he şeyi sayfanın tamamına göre ortalar.
+- align-content: space-evenly; yapısı, yazıları sayfanın her yerine eşit uzaklıkta korur. */
+
+
+.flex-container > div {
+    background-color: whitesmoke;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    height: 200px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    background-color: blue;
+}
