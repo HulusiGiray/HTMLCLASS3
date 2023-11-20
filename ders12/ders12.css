@@ -1,0 +1,82 @@
+.grid-item {
+    background-color: red;
+    border:3px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-container {
+    background-color: blue;
+    height: 800px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 700px auto auto;
+    column-gap: 30px;
+    row-gap: 30px;
+    /* ustify-content: center;
+    justify-content: space-between;
+    justify-content: start;
+    align-content: center;
+    align-content: space-evenly; */
+}
+/*
+-grid-template-columns: auto auto auto yapısı satır ve sütün oluşturmamıza yardımcı olur, matris gibi. 3x3'lük tabloya çevirdi. 
+-display: inlinegrid; yapısı, inline özelliği kazandırılmış grid.
+-column-gap: 30px; ve row-gap: 30px; yapıları ile satır ve sütünlar arası boşluk bırakabiliriz.
+-align-content: center; yapısı ile sütun hizalaması, dikey hizalaması yapablrz.
+-*/
+
+/*
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-column: 1 / span 3;
+} */
+
+
+/*
+.item2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-column: 4 / 6;
+} */
+
+/*
+- 4'den başla 6'ya kadar ama 6 dahil değil. ama span 6 dediğin zaman 4,5,6 yani 6'yı da dahil et demek. yani 3 alanlık yer kapladı.*/
+
+
+/*
+.item2{
+    grid-row: 2 / 4;
+} */
+
+/*
+.item3 {
+    grid-row: 2 / span 2;
+} */
+
+/*
+.item4 {
+    grid-row: 2 / span 2;
+} */
+
+.item5 {
+    grid-area: 2 / 2 / span 2 / span 2; 
+}
+/*
+-grid-are: grid-row-start grid-column-start grid-row-end grid-column-end 
+column = genişlik , row = uzunluk
+-hem 2. row'u hem 3. row'u kapladı. bu yüzden de aşağdaki item1' de 3 değil 4 dedik.*/
+
+.item4 {
+    grid-area: 2 / 1 / span 3 / span 1;
+}
+
+.item6{
+    grid-area: 1 / 1 / span 1 / span 3;
+}
+
+.item1 {
+    grid-area: 4 / 2 / span 1  / span 2;
+}
