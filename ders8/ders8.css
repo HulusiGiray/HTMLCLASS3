@@ -62,7 +62,7 @@ a:not(a:last-child) {
 /*                      CSS DİSPLAY                        */
 /*
 li {
-    display: inline;
+    : inline;
                      }
 kendi alanları kadar yer kaplarlar */
 
