@@ -13,6 +13,17 @@
 </head>
 
 <body>
+    <style>
+        div.first span {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+            border-width: 3px;
+            background-color: rgb(155, 67, 238);
+        }
+    </style><!-- utility için -->
+
     <!-- TOOLTİP , ufak açıklamalar için-->
     <div style="height: 50px;"></div>
 
@@ -43,7 +54,7 @@
 
         <!-- zama ayarlı toast yapısı, 5 saniye-->
         <button type="button" class="btn btn-primary" id="liveToastBtn">Show Toast</button>
-        <div id="liveToast" class="toast"><!-- show'u sildik.' -->
+        <div id="liveToast" class="toast"><!-- show'u sildik. id ekledik-->
             <div class="toast-header">
                 <p class="bg-success me-auto">Toast Header</p>
                 <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
@@ -53,10 +64,23 @@
             </div>
         </div>
 
+        <div class="alert alert-warning alert-dismissible fade" role="alert" id="liveToast">
+            <strong>Holy guacamole!</strong> You should check in on some of those
+            fields below.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
 
 
+        <!-- m margin, p-padding, b bottom, e right, s left, -->
 
 
+        <!-- utility,  -->
+
+        <button type="button" class="btn btn-primary" id="liveToastBtn">Show Alert</button>
+        <div class="alert alert-warning alert-dismissible fade" role="alert" id="liveToast">
+            <strong>Holy guacamole!</strong>You should check in on some of those
+            fields below.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
 
     </div>
 
@@ -64,20 +88,19 @@
     <script>
         const toastTrigger = document.getElementById('liveToastBtn')
         const toastLiveExample = document.getElementById('liveToast')
-        if (toastTrigger)
-        {
+        if (toastTrigger) {
             toastTrigger.addEventListener('click', () => {
                 const toast = new bootstrap.Toast(toastLiveExample)
                 toast.show()
             })
         }
     </script>
-    
+
     <script>
         const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
         const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
     </script>
-    
+
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
