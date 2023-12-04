@@ -111,9 +111,10 @@
       <div class="p-2 bg-primary">Flex Item 3</div>
     </div>
   </div>
-  
+
   <div class="container my-3">
-    <div class="d-flex bg-danger align-items-center" style="height: 300px;"><!-- yükseklik verdikten sonra align-items-center vermezsen strect yapıda oldığu için içeriklerin de yükseklikleri değişir. -->
+    <div class="d-flex bg-danger align-items-center" style="height: 300px;">
+      <!-- yükseklik verdikten sonra align-items-center vermezsen strect yapıda oldığu için içeriklerin de yükseklikleri değişir. -->
       <div class="p-2 bg-info">Flex Item 1</div>
       <div class="p-2 bg-warning align-self-start">Flex Item 2</div>
       <div class="p-2 bg-primary">Flex Item 3</div>
@@ -125,7 +126,153 @@
     <span class="d-sm-flex bg-danger">d-sm-flex</span><!--  -->
     <span class="d-lg-flex bg-secondary">d-lg-flex</span>
     <span class="d-xl-flex bg-warning">d-xl-flex</span>
-  </div><!-- koşullu ifade gibi düşünebiliriz. span normalde kendisi kadardır am d-sm-flex yapısı ile eğer ekran small ise flex yapısı kullan yanı satırın tamamını kapla ama ekran small da değil ise normal span ın kendi özelliğini yani kendisi kadar alan kaplasın. -->
+  </div>
+  <!-- koşullu ifade gibi düşünebiliriz. span normalde kendisi kadardır am d-sm-flex yapısı ile eğer ekran small ise flex yapısı kullan yanı satırın tamamını kapla ama ekran small da değil ise normal span ın kendi özelliğini yani kendisi kadar alan kaplasın. -->
+
+  <!-- forms -->
+
+  <div class="container my-3">
+    <form>
+      <label for="selecet1" class="form-label">Select List : </label>
+      <select id="selecet1" class="form-select w-50">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <button type="button" class="btn btn-primary mt-3">Submit</button>
+    </form>
+  </div>
+
+  <div class="container my-3">
+    <form>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="check1" checked>
+        <label for="check1" class="form-check-label">Option1</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="check2" checked>
+        <label for="check2" class="form-check-label">Option2</label>
+      </div>
+
+      <div class="d-flex mt-3">
+        <div class="form-check mx-3">
+          <input type="radio" class="form-check-input" id="radio1" name="radios">
+          <label class="form-check-label" for="radio1">Radio1</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="radio2" name="radios">
+          <label class="form-check-label" for="radio2">Radio2</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="radio3" name="radios">
+          <label class="form-check-label" for="radio3">Radio3</label>
+        </div>
+      </div>
+
+      <h2>Toggle Switch</h2>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label">Dark Mode</label>
+      </div>
+
+      <h2>Custom Range</h2>
+      <label class="form-label">Custom Range</label>
+      <input type="range" class="form-range">
+
+      <label class="form-label">Custom Range</label>
+      <input type="range" class="form-range" step="10">
+
+      <h2>Floating Label</h2>
+      <div class="form-floating my-3">
+        <input type="text" class="form-control" placeholder="Enter email">
+        <label>Emai
+          Adresi</label><!-- placeholder değil de label ın içindeki placeholder görevi görüyor. ama placeholder ı sildiğinde ise o özellik komple gidiyor. place holde olsun ama yazacağını label ın içine yaz. -->
+        <div class="form-floating my-3">
+          <input type="text" class="form-control" placeholder="Enter Kullanıcı">
+          <label>Kullanıcı Adı</label>
+        </div>
+
+        <div class="form-floating my-3" style="height: 200px;">
+          <textarea class="form-control h-75" placeholder="Comment Line"></textarea><label>Comment</label>
+        </div><!-- yükseklik verdiğimiz için textarea yı kenarından tutup büyütemiyoruz -->
+
+        <h2>Floating Label - Select</h2>
+        <div class="form-floating my-3">
+          <select class="form-select w-25">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <label class="form-label">Selecet List</label>
+        </div>
+
+
+    </form>
+  </div>
+
+  <div class="container mt-3">
+    <h3>Form Validation</h3>
+    <!-- was-validated -->
+    <form class="needs-validation" novalidate>
+      <div class="my-3">
+        <label class="form-label">Username:</label>
+        <input type="text" class="form-control" placeholder="Enter username" required>
+        <div class="valid-feedback">Valid</div>
+        <div class="invalid-feedback">Please fill out this name field</div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Password:</label>
+        <input type="password" class="form-control" placeholder="Enter password" required>
+        <div class="valid-feedback">Valid</div>
+        <div class="invalid-feedback">PLease fill out this password field</div>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" required>
+        <label class="form-check-label">I agree this statement</label>
+        <div class="valid-feedback">Valid</div>
+        <div class="invalid-feedback">burası açıklamadır</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- grid yapısında 12 ye bölme mantığı var -->
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-7 col-sm-3 col-lg-5 text-bg-primary">
+        col
+      </div>
+      <div class="col-2 col-sm-5 col-lg-5 text-bg-secondary">
+        col2
+      </div>
+      <div class="col-3 col-sm-4 col-lg-2 text-bg-danger">
+        col3
+      </div>
+    </div>
+  </div>
+  <script>
+
+    (() => {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
 
 </body>
 
