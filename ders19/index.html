@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>19.DERS</title>
+</head>
+
+<body>
+  <div class="container mt-3">
+
+    <div class="d-flex flex-column bg-secondary text-white p-3">
+      <div class="p-2 bg-info">Flex Item 1</div>
+      <div class="p-2 bg-warning">Flex Item 2</div>
+      <div class="p-2 bg-primary">Flex Item 3</div>
+    </div><br><br>
+
+    <div class="d-inline-flex flex-column bg-secondary text-white p-3">
+      <div class="p-2 bg-info">Flex Item 1</div>
+      <div class="p-2 bg-warning">Flex Item 2</div>
+      <div class="p-2 bg-primary">Flex Item 3</div>
+    </div><br><br>
+
+    <div class="d-flex justify-content-between bg-secondary text-white p-3">
+      <div class="p-2 bg-info">Flex Item 1</div>
+      <div class="p-2 bg-warning">Flex Item 2</div>
+      <div class="p-2 bg-primary">Flex Item 3</div>
+    </div><br><br>
+  </div>
+
+  <div class="d-flex">
+    <div class="p-2 bg-info flex-fill">Flex Item 1</div>
+    <div class="p-2 bg-warning flex-fill">Flex Item 2</div>
+    <div class="p-2 bg-primary flex-grow-1">Flex Item 3</div>
+  </div><br><br>
+
+  <div class="d-flex">
+    <div class="p-2 bg-info flex-fill order-3">Flex Item 1</div>
+    <div class="p-2 bg-warning flex-fill order-2">Flex Item 2</div>
+    <div class="p-2 bg-primary flex-grow-1 order-1">Flex Item 3</div>
+  </div><br><br>
+
+  <div class="d-flex">
+    <div class="p-2 bg-info flex-fill order-1 order-md-2 order-lg-3">Flex Item 1</div>
+    <div class="p-2 bg-warning flex-fill order-2 order-md-1 order-lg-2">Flex Item 2</div>
+    <div class="p-2 bg-primary flex-grow-1 order-1 order-md-3 order-lg-1">Flex Item 3</div>
+  </div><!-- medium ve large yapıların sıralaması, yani ekranı büyütüp küçülttükçe sıralama değişiyor --><br><br>
+
+  <div class="d-flex">
+    <div class="p-2 ms-auto me-auto bg-info">Flex Item 1</div>
+    <div class="p-2 bg-warning">Flex Item 2</div>
+    <div class="p-2 bg-primary">Flex Item 3</div>
+  </div><!-- ms-auto ve me-auto yerine mx-auto --><br><br>
+
+  <div class="d-flex">
+    <div class="p-2 mx-auto bg-info">Flex Item 1</div>
+    <div class="p-2 bg-warning">Flex Item 2</div>
+    <div class="p-2 bg-primary">Flex Item 3</div>
+  </div><br><br>
+
+  <div class="d-flex">
+    <div class="p-2 mx-auto bg-info">Flex Item 1</div>
+    <div class="p-2 bg-warning">Flex Item 2</div>
+    <div class="p-2 bg-primary">Flex Item 3</div>
+    <div class="p-2 mx-auto bg-info">Flex Item 1</div>
+    <div class="p-2 bg-warning">Flex Item 2</div>
+    <div class="p-2 bg-primary">Flex Item 3</div>
+    <div class="p-2 mx-auto bg-info">Flex Item 1</div>
+    <div class="p-2 bg-warning">Flex Item 2</div>
+    <div class="p-2 bg-primary">Flex Item 3</div>
+    <div class="p-2 mx-auto bg-info">Flex Item 1</div>
+    <div class="p-2 bg-warning">Flex Item 2</div>
+    <div class="p-2 bg-primary">Flex Item 3</div>
+  </div><br><br>
+
+  <div class="d-flex flex-wrap">
+    <div class="p-2 bg-info">Flex Item 1</div>
+    <div class="p-2 bg-warning">Flex Item 2</div>
+    <div class="p-2 bg-primary">Flex Item 3</div>
+    <div class="p-2 bg-info">Flex Item 1</div>
+    <div class="p-2 bg-warning">Flex Item 2</div>
+    <div class="p-2 bg-primary">Flex Item 3</div>
+    <div class="p-2 bg-info">Flex Item 1</div>
+    <div class="p-2 bg-warning">Flex Item 2</div>
+    <div class="p-2 bg-primary">Flex Item 3</div>
+    <div class="p-2 bg-info">Flex Item 1</div>
+    <div class="p-2 bg-warning">Flex Item 2</div>
+    <div class="p-2 bg-primary">Flex Item 3</div>
+  </div>
+
+  <div class="container my-3">
+    <div class="d-flex flex-wrap bg-success align-content-start
+  " style="height: 300px;">
+      <div class="p-2 bg-info">Flex Item 1</div>
+      <div class="p-2 bg-warning">Flex Item 2</div>
+      <div class="p-2 bg-primary">Flex Item 3</div>
+      <div class="p-2 bg-info">Flex Item 1</div>
+      <div class="p-2 bg-warning">Flex Item 2</div>
+      <div class="p-2 bg-primary">Flex Item 3</div>
+      <div class="p-2 bg-info">Flex Item 1</div>
+      <div class="p-2 bg-warning">Flex Item 2</div>
+      <div class="p-2 bg-primary">Flex Item 3</div>
+      <div class="p-2 bg-info">Flex Item 1</div>
+      <div class="p-2 bg-warning">Flex Item 2</div>
+      <div class="p-2 bg-primary">Flex Item 3</div>
+    </div>
+  </div>
+  
+  <div class="container my-3">
+    <div class="d-flex bg-danger align-items-center" style="height: 300px;"><!-- yükseklik verdikten sonra align-items-center vermezsen strect yapıda oldığu için içeriklerin de yükseklikleri değişir. -->
+      <div class="p-2 bg-info">Flex Item 1</div>
+      <div class="p-2 bg-warning align-self-start">Flex Item 2</div>
+      <div class="p-2 bg-primary">Flex Item 3</div>
+    </div>
+  </div>
+
+  <div class="container my-3">
+    <span class="d-flex bg-primary">d-flex</span>
+    <span class="d-sm-flex bg-danger">d-sm-flex</span><!--  -->
+    <span class="d-lg-flex bg-secondary">d-lg-flex</span>
+    <span class="d-xl-flex bg-warning">d-xl-flex</span>
+  </div><!-- koşullu ifade gibi düşünebiliriz. span normalde kendisi kadardır am d-sm-flex yapısı ile eğer ekran small ise flex yapısı kullan yanı satırın tamamını kapla ama ekran small da değil ise normal span ın kendi özelliğini yani kendisi kadar alan kaplasın. -->
+
+</body>
+
+</html>
