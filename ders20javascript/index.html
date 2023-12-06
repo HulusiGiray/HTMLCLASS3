@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="TR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script>
+        function myFunction1(){
+            document.getElementById("demo1").innerHTML = "Head içindeki script çalıştı."
+        }
+    </script>
+    
+    <title>20.DERS</title>
+</head>
+
+<body>
+    <!-- JavaScript ne yapabilir? -->
+    
+    <!-- HTML içeriğini değşitirebilir -->
+    <p id="demo">JS, html içeriğini değiştirebilir.</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript'">Click me!</button>
+    <br><br><br><br>
+    <!-- html attribute -->
+    <button onclick="document.getElementById('myImage').src ='sabah.jpg'">Sabah</button>
+    <img id="myImage" src="sabah.jpg">
+    <button onclick="document.getElementById('myImage').src='aksam.jpg'">Aksam</button>
+    <br><br><br><br>
+    <!-- css, html stil özelliklerini değiştirebilir. -->
+   
+    <p id="stil">html stil, css özelliklerini değiştirebilir</p>
+    <button type="button" onclick="document.getElementById('stil').style.fontSize='35px'">Click me!</button>
+    <br><br><br><br>
+
+    <!-- html elementleri gizleyebilir/gösterebilir.-->
+    <button type="button" onclick="document.getElementById('element').style.display='none'">Gizle</button>
+    <button type="button" onclick="document.getElementById('element').style.display='block'">Göster</button>
+    <p id="element">Html elementleri gizleyebilir/gösterebilir.</p>
+    <p>Burası paragrafın devamıdır</p>
+    <br><br><br><br>
+
+    <button type="button" onclick="document.getElementById('element').style.display='none'">Gizle</button>
+    <button type="button" onclick="document.getElementById('element').style.display='block'">Göster</button>
+    <p id="element">Html elementleri gizleyebilir/gösterebilir.</p>
+    <p>Burası paragrafın devamıdır</p>
+    <br><br><br><br>
+
+    <!-- html içindeki head ve body kısımlarına VE js file içindeki fonksiyonları çağırdık.-->
+    <p id="demo1">Değişecek paragraf</p>
+    <button type="button" onclick="myFunction1()">Head</button>
+    <button type="button" onclick="myFunction2()">Body</button>
+    <button type="button" onclick="myFunction3()">External</button>
+    <script>
+        function myFunction2(){
+            document.getElementById("demo1").innerHTML = "Body içindeki script çalıştı"
+        }
+    </script>
+    <br><br><br><br>
+
+<script src="javascript.js"></script>
+</body>
+</html>
