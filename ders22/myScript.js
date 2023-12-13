@@ -97,9 +97,10 @@ console.log(text14.charAt(6))//W
 console.log(text14[6])//W
 
 //sonuncu elemanı getiren kod nedir? charAt veya üstteki iki içerikten biri kullanarak.
-let text15="abcdefghklmn"
-let y = text15.length;
-console.log(text15.charAt(y))
+let text15="12345678"
+console.log(text15.charAt(text15.length-1))
+console.log(text15[text15.length-1])
+console.log(text15.slice(-1))
 
 //split
 //string'i array'e çevirmek için
